@@ -1,0 +1,905 @@
+$bg-img: url(../images/solid-color-image.png);
+$bg-col: #f2dce1;
+$form-main-col: #e77c8e;
+
+$main-font: 'Roboto Slab',
+sans-serif;
+
+$text-font-col: #090a0b;
+
+main {
+    background-image: $bg-img;
+    background-color: $bg-col;
+    filter: grayscale(5%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* Create the parallax scrolling effect */
+}
+
+h1 {
+    line-height: 1.1;
+    padding: 2.5rem 12px 0rem 10px;
+    font-family: $main-font;
+    letter-spacing: -.5px;
+    margin-bottom: 1.5rem;
+    word-break: break-word;
+    margin: 0 40px 20px 40px;
+    font-weight: bolder;
+    color: $text-font-col;
+
+}
+
+h2 {
+    padding: 5px 12px 12px 10px;
+    font-family: $main-font;
+    letter-spacing: .5px;
+    font-weight: bold;
+    margin: 40px 40px 20px 40px;
+    color: $text-font-col;
+}
+
+h3 {
+    padding: 5px 12px 20px 10px;
+    margin: 40px 40px 20px 40px;
+    letter-spacing: .5px;
+    font-weight: bold;
+    font-family: $main-font;
+    color: $text-font-col;
+}
+
+p {
+    font-family: $main-font;
+    padding: 12px;
+    color: $text-font-col;
+    line-height: 1.5;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    margin: 20px 40px 0 40px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    font-family: $main-font;
+    color: $text-font-col;
+}
+
+li {
+    list-style-type: circle;
+    font-family: 'Roboto Slab',
+        sans-serif;
+    padding: 12px;
+    color: $text-font-col;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    margin: 0 40px 0 70px;
+}
+
+// nav {
+//     animation: boxShadow 1s ease 0s 1 normal none;
+// }
+
+nav ul {
+    background-color: #e3b4b8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+nav li {
+
+    padding: 22px;
+    display: flex;
+    margin: 5px 5px 5px 5px;
+}
+
+// @keyframes boxShadow {
+//     0% {
+//         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+//     }
+
+//     100% {
+//         box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+//     }
+// }
+
+.current-page {
+    border: 2px solid #8d3846;
+}
+
+nav a {
+    color: #8e303f;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.list-group {
+    padding-bottom: 3rem;
+}
+
+footer {
+    background-color: #f0c9cf;
+    padding: 32px 8px;
+}
+
+img:hover {
+    border: 2px dashed lightblue;
+}
+
+.wrapper-cover {
+    background-image: url(../images/large-brain.png);
+    // animation: myAnim 2s ease 0s 1 normal forwards;
+    background-size: 100%;
+    position: relative;
+    text-align: center;
+    color: #503D42;
+    font-size: 80px;
+    font-weight: bold;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main {
+    background-color: $bg-col;
+}
+
+
+.cover-img {
+    width: 100%;
+    max-height: 750px;
+    opacity: 0.0;
+}
+
+@keyframes scaleDown {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.5);
+    }
+}
+
+.centered {
+    width: 100%;
+    padding: 25px 0px 25px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    background-color: #e3b4b8;
+    color: #8e303f;
+}
+
+.hidden {
+    display: none;
+}
+
+// #skip {
+//     background-image: $bg-img;
+//     background-color: $bg-col;
+// }
+
+
+// Skip to main content
+a.skip {
+    color: #8d3846;
+    background-color: #efdede;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: -500px;
+    font-size: 15px;
+}
+
+a.skip:link {
+    text-decoration: none;
+}
+
+a.skip:focus {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+// @keyframes myAnim {
+//     0% {
+//         opacity: 0;
+//     }
+
+//     100% {
+//         opacity: 1;
+//     }
+// }
+
+
+.eater-types {
+    line-height: 1.5em;
+    padding: 0 0 15px 0;
+}
+
+.eater-type {
+    padding: 3px 0 2px 25px;
+    color: #2c3e50;
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+/* Add style to your images focusing on the box model. */
+
+.gallery {
+    box-sizing: border-box;
+}
+
+.grid:hover {
+    border: none;
+    opacity: 0.8;
+}
+
+.grid-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.sidebar2 {
+    grid-area: sidebar2;
+}
+
+.content {
+    grid-area: content;
+    background-color: transparent;
+}
+
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.wrapper {
+    // background-image: $bg-img;
+    display: grid;
+    grid-gap: 1em;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "header"
+        "sidebar"
+        "content"
+        "sidebar2"
+        "footer"
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* flex display */
+.flex-container {
+    /* Arrange children using flexbox */
+    // display: flex;
+    /* ALlow images to display on multiple lines rather than a single line */
+    flex-wrap: wrap;
+    /* Container should take up only 90% of the browser, leave 5% space on each side */
+    width: 90%;
+    /* Center container */
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.flex {
+    /* images display inline by default and act like text. We want them to act like divs, so display block */
+    display: flex;
+    flex-direction: column;
+    /* our width setting for mobile, one image per line */
+    flex-basis: 100%;
+    width: 80%;
+    height: auto;
+    /* provide some space between our images */
+    margin: 5px;
+    border: 3px dashed #ADD8E6;
+    box-shadow: 3px 3px 8px 0px rgba(194, 156, 192, 1.0);
+    /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#flip-card-img {
+    width: 500px;
+    height: 500px;
+}
+
+.flip-card {
+    // background-color: transparent;
+    width: 500px;
+    height: 500px;
+    perspective: 40rem;
+    margin: 30px;
+    border: 3px dashed #ADD8E6;
+    /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: $bg-col;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: $bg-col;
+    color: black;
+    transform: rotateY(180deg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-text {
+    // width: 90%;
+    text-align: center;
+    overflow: auto;
+}
+
+.box {
+    // background-image: $bg-img;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 22px;
+    font-family: $main-font;
+    text-align: center;
+}
+
+.header,
+.footer {
+    // background-image: $bg-img;
+}
+
+.sidebar2 {
+    // background-image: $bg-img;
+    // color: #444;
+}
+
+/* Form Style */
+
+.form-page {
+    background-image: none;
+    background-color: #FFC0CB;
+}
+
+#title-Tag-Line {
+    font-size: 20px;
+}
+
+/* form animation starts */
+.form {
+    background: #fff;
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    border-radius: 5px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border-top: 5px solid $form-main-col;
+    animation: bounce 1.5s infinite;
+}
+
+::-webkit-input-placeholder {
+    font-size: 1.3em;
+}
+
+.title {
+    display: block;
+    font-family: 'Roboto Slab', sans-serif;
+    margin: 10px auto 5px;
+    width: 300px;
+}
+
+.termsConditions {
+    margin: 0 auto 5px 80px;
+}
+
+.pageTitle {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.secondaryTitle {
+    color: #2C3E50;
+    font-size: 1em;
+}
+
+.name {
+    background-color: #ebebeb;
+    color: #2C3E50;
+}
+
+.name:hover {
+    border-bottom: 5px solid $form-main-col;
+    height: 30px;
+    width: 280px;
+    transition: ease 0.5s;
+}
+
+.email {
+    background-color: #ebebeb;
+    height: 2em;
+}
+
+.email:hover {
+    border-bottom: 5px solid $form-main-col;
+    height: 30px;
+    width: 280px;
+    transition: ease 0.5s;
+}
+
+.message {
+    background-color: #ebebeb;
+    overflow: hidden;
+    height: 10rem;
+}
+
+.message:hover {
+    border-bottom: 5px solid $form-main-col;
+    height: 12em;
+    width: 280px;
+    transition: ease 0.5s;
+}
+
+.formEntry {
+    display: block;
+    margin: 30px auto;
+    /* min-width: 300px; */
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s;
+}
+
+.submit {
+    width: 200px;
+    color: white;
+    background-color: #8d3846;
+    font-size: 20px;
+}
+
+.submit:hover {
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+    transform: translateY(-3px);
+    width: 300px;
+    border-top: 5px solid #0e3750;
+    border-radius: 0%;
+}
+
+@keyframes bounce {
+    0% {
+        tranform: translate(0, 4px);
+    }
+
+    50% {
+        transform: translate(0, 8px);
+    }
+}
+
+
+@media only screen and (min-width: 300px) {
+    main {
+        background-image: $bg-img;
+        background-color: $bg-col;
+        filter: grayscale(5%);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .formEntry {
+        display: block;
+        margin: 30px auto;
+        /* 	  min-width: 300px; */
+        padding: 10px;
+        border-radius: 2px;
+        border: none;
+        transition: all 0.5s ease 0s;
+    }
+
+    /* flex display */
+    .flex-container {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    li {
+        font-size: 15px;
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    .flip-card {
+        // background-color: transparent;
+        width: 250px;
+        height: 250px;
+        perspective: 40rem;
+        margin: 30px;
+        border: 3px dashed #ADD8E6;
+        /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
+    }
+
+    #flip-card-img {
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .content,
+    .header img,
+    .sidebar img,
+    .sidebar2 img,
+    .sidebar3 img,
+    .sidebar4 img,
+    .sidebar5 img,
+    .sidebar6 img,
+    .sidebar7 img {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .wrapper {
+        grid-template-columns: 50% auto;
+        grid-template-areas:
+            "header   sidebar"
+            "content  content"
+            "sidebar2 sidebar3"
+            "footer   footer"
+            "sidebar4 sidebar5"
+
+            "sidebar6 sidebar7";
+    }
+
+    .box {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 720px) {
+    .flex {
+        flex-basis: 50%;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 400px;
+        height: 400px;
+        perspective: 40rem;
+        margin: 30px;
+        border: 3px dashed #ADD8E6;
+        /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
+    }
+
+    #flip-card-img {
+        width: 400px;
+        height: 400px;
+    }
+
+    h1 {
+        font-size: 37px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    li {
+        font-size: 17px;
+    }
+
+    a {
+        font-size: 17px;
+    }
+
+    .content,
+    .sidebar img,
+    .sidebar2 img,
+    .sidebar3 img,
+    .sidebar4 img,
+    .sidebar5 img,
+    .sidebar6 img,
+    .sidebar7 img {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .header img {
+        max-width: 600px;
+        max-height: 250px;
+    }
+
+    .wrapper {
+        grid-gap: 20px;
+        grid-template-columns: 30% auto 30%;
+        grid-template-areas:
+            "header  header  header"
+            "sidebar content sidebar2"
+            "footer  footer  footer";
+        max-width: 1000px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .box {
+        font-size: 20px;
+    }
+}
+
+/* three images per line when browser width exceeds 960px */
+@media only screen and (min-width: 960px) {
+    .flex {
+        flex-basis: 33.333%;
+    }
+
+    nav li {
+        text-align: center;
+        margin: 5px 5px 5px 5px;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 500px;
+        height: 500px;
+        perspective: 40rem;
+        margin: 30px;
+        border: 3px dashed #ADD8E6;
+        /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
+    }
+
+    #flip-card-img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .content,
+    .header img,
+    .sidebar img,
+    .sidebar2 img,
+    .sidebar3 img,
+    .sidebar4 img,
+    .sidebar5 img,
+    .sidebar6 img,
+    .sidebar7 img {
+        max-width: 100%;
+        /* min-width: 100px; */
+    }
+
+    .wrapper {
+        /* grid-gap: 30px; */
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-areas:
+            "header  header  sidebar sidebar"
+            "content sidebar2 sidebar7 sidebar7"
+            "footer  footer  footer footer"
+            "sidebar3  sidebar3  sidebar5 sidebar5"
+            "sidebar6 sidebar6 sidebar4 sidebar4"
+        ;
+        max-width: 1200px;
+
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    li {
+        font-size: 22px;
+    }
+
+    a {
+        font-size: 22px;
+    }
+
+}
+
+/* four images per line when browser width exceeds 1280px */
+@media only screen and (min-width: 1280px) {
+    .flex {
+        flex-basis: 25%;
+    }
+}
+
+/* five images per line when browser width exceeds 1600px */
+@media only screen and (min-width: 1600px) {
+    .flex {
+        flex-basis: 20%;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .wrapper-cover {
+        animation: none;
+        // text-align: center;
+    }
+
+    img {
+        border: 2px dashed lightblue;
+    }
+
+    .flip-card:hover .flip-card-inner,
+    .flip-card:focus-within .flip-card-inner,
+    .flip-card:active .flip-card-inner,
+    .flip-card:focus .flip-card-inner {
+        transform: none;
+    }
+
+    .wrapper-cover {
+        background-attachment: initial;
+    }
+
+    .form {
+        animation: none;
+    }
+
+    .formEntry {
+        transition: none;
+    }
+
+    .submit:hover {
+        transform: none;
+    }
+
+    .name {
+        border-bottom: 5px solid $form-main-col;
+        height: 30px;
+        width: 280px;
+        transition: none;
+    }
+
+    .email {
+        border-bottom: 5px solid $form-main-col;
+        height: 30px;
+        width: 280px;
+        transition: none;
+    }
+
+    .message {
+        border-bottom: 5px solid $form-main-col;
+        height: 12em;
+        width: 280px;
+        transition: none;
+    }
+
+    .submit {
+        box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+        transform: none;
+        width: 300px;
+        border-top: 5px solid #0e3750;
+        border-radius: 0%;
+    }
+
+    .grid:hover {
+        opacity: 1;
+        border: 2px dashed lightblue;
+    }
+
+    a.skip {
+        -webkit-transition: none;
+        transition: none;
+    }
+}
